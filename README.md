@@ -59,7 +59,7 @@ This project develops a **machine learning (ML) model** to predict early-stage *
 1. **Presentation Slides**: [AI In Healthcare-Final Project.pptx](Presentation_Slide/Final_Project_Grp15.pptx)  
 2. **YouTube Presentation**: [Link to Video](https://youtube.com/your-video-link)  
 3. **Dataset**: [UCI Repository](https://archive.ics.uci.edu/dataset/174/parkinsons) or [Zipped File](Data/parkinsons.zip)  
-4. **Code**: Fully commented Jupyter notebook/Python scripts.  
+4. **Code**: [Code_Files] (Code/).  
 
 ---  
 
