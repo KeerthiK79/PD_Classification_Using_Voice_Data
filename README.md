@@ -21,82 +21,30 @@ This project develops a **machine learning (ML) model** to predict early-stage *
 
 ---  
 
-##  Installation  
+---  
+## How to Run  
+### Run the Jupyter Notebook 
 1. Clone the repository:  
-   ```bash  
+   ```bash
    git clone https://github.com/Anannabiswas/PD_Classification_Using_Voice_Data.git
-   cd PD_Classification_Using_Voice_Data
-   ```  
-2. Install dependencies:  
-   ```bash  
-   pip install numpy pandas scikit-learn imbalanced-learn matplotlib  
-   ```  
+   ```
+2. Open the notebook:  
+   ```bash
+   jupyter notebook PD_Classification_Using_Voice_Data.ipynb
+   ```
+3. Run the cells sequentially.  
 
----  
-
-##  Usage  
-### Option 1: Run as Python Script
+### Run the Python Script 
 ```bash
-python pd_classification_voice_data.py
-Outputs Generated:
+python PD_Classification_Using_Voice_Data.py
+```
 
-Model evaluation reports (accuracy/precision/recall) printed to console
+## Dependencies  
+Install required libraries:  
+```bash
+pip install numpy pandas scikit-learn imbalanced-learn matplotlib  
+```
 
-Confusion matrices for all models (saved as PNG)
-
-ROC curves comparing all classifiers
-
-Feature importance plots from RFE
-
-Example terminal output:
-
-Random Forest Results:
-Accuracy: 0.9487 | Precision: 0.95 | Recall: 0.97
-Confusion Matrix:
-[[ 7  1]
- [ 0 30]]
-Option 2: Interactive Jupyter Notebook
-bash
-jupyter notebook PD_Classification_Voice_Data.ipynb
-Step-by-Step Execution:
-1. Data Preparation
-
-python
-# Load and inspect data
-df = pd.read_csv('data/parkinsons.data')
-display(df.head())
-
-# Split dataset (stratified)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, stratify=y)
-2. Class Balancing (SMOTE)
-
-python
-smote = SMOTE(random_state=42)
-X_balanced, y_balanced = smote.fit_resample(X_train, y_train)
-sns.countplot(x=y_balanced)  # Visualize balanced classes
-3. Model Training
-
-python
-# Initialize and train models
-models = {
-    'Random Forest': RandomForestClassifier(),
-    'SVM': SVC(probability=True),
-    'KNN': KNeighborsClassifier()
-}
-
-for name, model in models.items():
-    model.fit(X_balanced, y_balanced)
-4. Evaluation
-
-python
-# Generate evaluation metrics
-for name, model in models.items():
-    evaluate_model(model, X_test, y_test, name)  # Prints metrics + plots
-Note: Ensure all dependencies are installed using:
-
-bash
-pip install -r requirements.txt
----  
 
 ## Results  
 | Model          | Accuracy (with RFE) |  
