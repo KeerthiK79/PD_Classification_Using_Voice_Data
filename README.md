@@ -3,7 +3,7 @@
 # Early-Stage Parkinson’s Disease Prediction Using Voice Recording Data  
 
 ##  Overview  
-This project develops a **machine learning (ML) model** to predict early-stage **Parkinson’s Disease (PD)** using voice recordings. By analyzing speech abnormalities (e.g., reduced vocal intensity, monotony), we aim to provide a **non-invasive, cost-effective diagnostic tool** for early detection.  
+This project develops a **machine learning (ML) model** to predict early-stage **Parkinson’s Disease (PD)** using voice recordings. By analyzing speech abnormalities, we aim to provide a **non-invasive, cost-effective diagnostic tool** for early detection.  
 
 ###  Key Features  
 - **Class Imbalance Handling**: Applied **SMOTE** to balance PD vs. healthy voice samples.  
