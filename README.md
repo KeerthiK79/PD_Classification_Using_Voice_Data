@@ -35,11 +35,27 @@ This project develops a **machine learning (ML) model** to predict early-stage *
 ---  
 
 ##  Usage  
-1. Run the Jupyter notebook or Python script:  
+Option 1: Run the Python Script Directly
+bash
+python PD_Classification_Voice_Data.py
+
+Outputs:
+
+Automatically generates:
+
+Model evaluation reports (accuracy, precision, recall)
+
+Confusion matrices for Random Forest/SVM/KNN
+
+ROC curves and feature importance plots
+
+Option 2: Step-by-Step Execution (Jupyter Notebook)
+
+Run the Jupyter notebook or Python script:  
    ```bash  
-   jupyter notebook parkinsons_prediction.ipynb  
-   ```  
-2. Follow the steps to:  
+   jupyter notebook PD_Classification_Voice_Data.ipynb
+   ```
+Follow the steps to:  
    - Preprocess data (SMOTE for class balancing).  
    - Train models (Random Forest, SVM, KNN).  
    - Evaluate performance (accuracy, ROC curves).  
