@@ -35,31 +35,67 @@ This project develops a **machine learning (ML) model** to predict early-stage *
 ---  
 
 ##  Usage  
-Option 1: Run the Python Script Directly
+### Option 1: Run as Python Script
+```bash
+python pd_classification_voice_data.py
+Outputs Generated:
+
+Model evaluation reports (accuracy/precision/recall) printed to console
+
+Confusion matrices for all models (saved as PNG)
+
+ROC curves comparing all classifiers
+
+Feature importance plots from RFE
+
+Example terminal output:
+
+Random Forest Results:
+Accuracy: 0.9487 | Precision: 0.95 | Recall: 0.97
+Confusion Matrix:
+[[ 7  1]
+ [ 0 30]]
+Option 2: Interactive Jupyter Notebook
 bash
-python PD_Classification_Voice_Data.py
+jupyter notebook PD_Classification_Voice_Data.ipynb
+Step-by-Step Execution:
+1. Data Preparation
 
-Outputs:
+python
+# Load and inspect data
+df = pd.read_csv('data/parkinsons.data')
+display(df.head())
 
-Automatically generates:
+# Split dataset (stratified)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, stratify=y)
+2. Class Balancing (SMOTE)
 
-Model evaluation reports (accuracy, precision, recall)
+python
+smote = SMOTE(random_state=42)
+X_balanced, y_balanced = smote.fit_resample(X_train, y_train)
+sns.countplot(x=y_balanced)  # Visualize balanced classes
+3. Model Training
 
-Confusion matrices for Random Forest/SVM/KNN
+python
+# Initialize and train models
+models = {
+    'Random Forest': RandomForestClassifier(),
+    'SVM': SVC(probability=True),
+    'KNN': KNeighborsClassifier()
+}
 
-ROC curves and feature importance plots
+for name, model in models.items():
+    model.fit(X_balanced, y_balanced)
+4. Evaluation
 
-Option 2: Step-by-Step Execution (Jupyter Notebook)
+python
+# Generate evaluation metrics
+for name, model in models.items():
+    evaluate_model(model, X_test, y_test, name)  # Prints metrics + plots
+Note: Ensure all dependencies are installed using:
 
-Run the Jupyter notebook or Python script:  
-   ```bash  
-   jupyter notebook PD_Classification_Voice_Data.ipynb
-   ```
-Follow the steps to:  
-   - Preprocess data (SMOTE for class balancing).  
-   - Train models (Random Forest, SVM, KNN).  
-   - Evaluate performance (accuracy, ROC curves).  
-
+bash
+pip install -r requirements.txt
 ---  
 
 ## Results  
