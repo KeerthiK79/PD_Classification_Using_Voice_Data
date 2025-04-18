@@ -24,8 +24,8 @@ This project develops a **machine learning (ML) model** to predict early-stage *
 ##  Installation  
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/your-username/parkinsons-voice-prediction.git  
-   cd parkinsons-voice-prediction  
+   git clone https://github.com/Anannabiswas/PD_Classification_Using_Voice_Data.git
+   cd PD_Classification_Using_Voice_Data
    ```  
 2. Install dependencies:  
    ```bash  
