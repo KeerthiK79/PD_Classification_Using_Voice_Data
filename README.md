@@ -77,11 +77,7 @@ This project develops a **machine learning (ML) model** to predict early-stage *
 - Test on larger datasets for generalizability.  
 
 ---  
-
-##  License  
-This project is licensed under **MIT**. See [LICENSE](LICENSE) for details.  
-
----  
+ 
 
 **GitHub Links**:  
 - [Ananna’s Repository](https://github.com/anannabiswas/parkinsons-voice-prediction)  
