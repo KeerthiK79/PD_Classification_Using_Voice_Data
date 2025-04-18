@@ -80,6 +80,6 @@ This project develops a **machine learning (ML) model** to predict early-stage *
  
 
 **GitHub Links**:  
-- [Ananna’s Repository](https://github.com/anannabiswas/parkinsons-voice-prediction)  
+- [Ananna’s Repository](https://github.com/Anannabiswas/PD_Classification_Using_Voice_Data/tree/main)  
 - [Keerthi’s Repository](https://github.com/keerthikesavan/parkinsons-voice-prediction)  
 
