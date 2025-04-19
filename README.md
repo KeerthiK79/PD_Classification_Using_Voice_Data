@@ -56,7 +56,7 @@ pip install numpy pandas scikit-learn imbalanced-learn matplotlib
 
 ## Project Deliverables  
 1. **Presentation Slides**: [AI In Healthcare-Final Project.pptx](Presentation_Slide/Final_Project_Grp15.pptx)  
-2. **YouTube Presentation**: [Link to Video](https://youtube.com/your-video-link)  
+2. **YouTube Presentation**: [Link to Video](https://youtu.be/Uvg_xmzNvcY) 
 3. **Dataset**: [UCI Repository](https://archive.ics.uci.edu/dataset/174/parkinsons) or [Zipped File](Data/parkinsons.zip)  
 4. **Code**: [Code Files](Code/).  
 
