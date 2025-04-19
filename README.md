@@ -1,5 +1,3 @@
-
-
 # Early-Stage Parkinson’s Disease Prediction Using Voice Recording Data  
 
 ##  Overview  
